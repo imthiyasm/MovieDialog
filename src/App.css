@@ -1,0 +1,103 @@
+.cl-preload-container {
+  text-align: center;
+  position: absolute;
+  z-index: 1002;
+}
+
+.cl-preload-container:before {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.cl-preload-speeding-wheel {
+  position: fixed;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: cl-preload-spin 575ms infinite ease-out;
+}
+
+@keyframes cl-preload-spin {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes cl-preload-spin {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes cl-preload-spin {
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cl-preload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes cl-preload-spin {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  border: 1px solid #333;
+  margin: 5px 0;
+}
+
+.headerHolder {
+  background-color: #4899D0;
+  padding: 5px 0px;
+}
+
+.searchLabel {
+  padding: 10px 0;
+}
+
+.searchLabel p {
+  margin-bottom: 0px;
+}
+
+.searchLabel span:last-child {
+  font-weight: bold;
+}
+
+.catalogItems img {
+  width: auto;
+  height: 250px;
+  margin: 15px 0;
+}
+
+.catalogItems p {
+  margin-bottom: 5px;
+}
+
+.userName {
+  padding: 0 10px; 
+}
