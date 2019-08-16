@@ -1,13 +1,14 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 // import PropTypes from 'prop-types';
+import placeholder from '../images/placeholder.png';
 
 class ViewItems extends React.PureComponent {
 
   /* Info: Showing the placeholder image, if image is a broken */
   showPlaceholderImage = (e) => {
     e.target.onerror = null;
-    e.target.src = 'images/placeholder.png';
+    e.target.src = placeholder;
   }
 
   render() {
